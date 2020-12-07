@@ -8,9 +8,23 @@
 </head>
 <body>
     <h1> Home </h1>
-    
+    <a id="write" href="#"> 글 쓰기 </a><br>
+    <a id="list" href="#"> 글 목록</a><br>
+    <a id="detail" href="#"> 글 상세</a><br>
+    <a id="update" href="#"> 글 수정</a><br>
     <script>
-         
+         document.getElementById('write').addEventListener('click', e => {
+             location.href = '/move/articles/write'
+         })
+         document.getElementById('list').addEventListener('click', e => {
+             location.href = '/move/articles/list'
+         })
+         document.getElementById('detail').addEventListener('click', e => {
+             location.href = '/move/articles/detail'
+         })
+         document.getElementById('update').addEventListener('click', e => {
+            location.href = '/move/articles/update'
+         })
     </script>
 </body>
 </html>
